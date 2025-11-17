@@ -53,7 +53,7 @@ async def process_cancel_command(message: Message):
     )
 
 
-# Этот хэндлер будет срабатывать на команду "/cancel" в любых состояниях1111111111,
+# Этот хэндлер будет срабатывать на команду "/cancel" в любых22222222222222222 состояниях1111111111,
 # кроме состояния по умолчанию, и отключать машину состояний
 @dp.message(Command(commands='cancel'), ~StateFilter(default_state))
 async def process_cancel_command_state(message: Message, state: FSMContext):
